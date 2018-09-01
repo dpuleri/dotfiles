@@ -1,0 +1,10 @@
+[core]
+    fileMode = false
+    excludesfile = /Users/daniel/.gitignore
+    autocrlf = false
+[include]
+    path = ~/.gitconfig.local
+[alias]
+    st = status
+    unstage = reset HEAD --
+    last = log -1 HEAD
