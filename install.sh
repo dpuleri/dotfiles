@@ -25,3 +25,7 @@ rm -irf $HOME/.gitconfig
 ln -s $HOME/.dotfiles/gitconfig.symlink $HOME/.gitconfig
 rm -irf $HOME/.gitignore
 ln -s $HOME/.dotfiles/gitignore.symlink $HOME/.gitignore
+
+# flake8 (python linter) config
+rm -irf $HOME/.flake8
+ln -s $HOME/.dotfiles/flake8.symlink $HOME/.flake8
