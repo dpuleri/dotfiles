@@ -88,3 +88,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias catpdf="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py"
 alias sublime="open -a /Applications/Sublime\ Text.app"
+
+# custom functions:
+# convert from ogv to mp4
+function ogv2mp4() {
+    origname=$1
+    if [[ $origname != *.ogv ]]
+    then
+        echo "input must end in .ogv"
+        return 1
+    fi
+    basename="${origname%.*}"
+    ffmpeg -i $origname -c:v libx264 -preset slower -crf 20 -c:a aac -b:a 128k -pix_fmt yuv420p $basename.mp4
+}
