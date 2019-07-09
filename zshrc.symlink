@@ -14,6 +14,9 @@ ZSH_CUSTOM=$DOTFILES
 # time that oh-my-zsh is loaded.
 ZSH_THEME="xxf-custom"
 
+# extended globbing
+setopt extendedglob
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
