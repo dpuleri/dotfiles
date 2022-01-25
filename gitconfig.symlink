@@ -1,6 +1,6 @@
 [core]
     fileMode = false
-    excludesfile = /Users/daniel/.gitignore
+    excludesfile = ~/.gitignore
     autocrlf = false
 [include]
     path = ~/.gitconfig.local
