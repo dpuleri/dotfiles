@@ -104,3 +104,7 @@ function ogv2mp4() {
     basename="${origname%.*}"
     ffmpeg -i $origname -c:v libx264 -preset slower -crf 20 -c:a aac -b:a 128k -pix_fmt yuv420p $basename.mp4
 }
+
+# homebrew options:
+# stop homebrew from auto-updating packages
+export HOMEBREW_NO_INSTALL_UPGRADE=1
