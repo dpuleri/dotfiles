@@ -91,6 +91,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias catpdf="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py"
 alias sublime="open -a /Applications/Sublime\ Text.app"
+# always preserve modification times
+alias scp="scp -p"
 
 # custom functions:
 # convert from ogv to mp4
